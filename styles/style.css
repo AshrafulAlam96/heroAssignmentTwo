@@ -1,0 +1,109 @@
+
+/* Plants Lover Section */
+.plants-section {
+  background-color: #fff;  /* Section background */
+  padding: 0;                /* No default padding */
+  display: flex;
+  justify-content: center;
+}
+
+.plants-container {
+  width: 1140px;
+  height: 597px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;       /* Vertically centers image and text */
+  gap: 40px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #fff
+}
+
+/* Image & Badge */
+.plants-image-box {
+  position: relative;
+  flex: 1;
+  min-width: 300px;
+  max-width: 50%;
+}
+
+.plants-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.trusted-badge {
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 286px;
+  height: 286px;
+  z-index: 1;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.trusted-badge {
+  position: absolute;
+  top: -20;
+  right: -60;
+  width: 286px;
+  height: 286px;
+  z-index: 1;
+
+  /*  Animation */
+  animation: spin 20s linear infinite;
+}
+
+
+/* Text Content */
+.plants-content {
+  flex: 1;
+  max-width: 50%;
+  min-width: 300px;
+}
+
+.plants-content h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #1c1c1e;
+}
+
+.plants-content ul {
+  padding-left: 20px;
+}
+
+.plants-content li {
+  font-size: 16px;
+  color: #6b7280;
+  margin-bottom: 16px;
+  line-height: 1.6;
+  list-style-type: disc;
+}
+
+/* Responsive (Mobile View) */
+@media (max-width: 768px) {
+  .plants-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .plants-content {
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .trusted-badge {
+    display: none;  /* Hide on mobile */
+  }
+
+  .plants-image-box, .plants-content {
+    max-width: 100%;
+  }
+}
