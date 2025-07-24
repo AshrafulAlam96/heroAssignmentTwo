@@ -19,6 +19,7 @@
   background-color: #fff
 }
 
+/* Challenge Part 02 Start */
 /* Image & Badge */
 .plants-image-box {
   position: relative;
@@ -43,6 +44,7 @@
   z-index: 1;
 }
 
+/* Optional Part Start */
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
@@ -59,7 +61,7 @@
   /*  Animation */
   animation: spin 20s linear infinite;
 }
-
+/* Optional Part End */
 
 /* Text Content */
 .plants-content {
@@ -107,3 +109,4 @@
     max-width: 100%;
   }
 }
+/* Challenge Part 02 Start */
